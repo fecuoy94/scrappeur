@@ -6,9 +6,5 @@ require('open-uri')
 page = Nokogiri::HTML(open("https://coinmarketcap.com/all/views/all/"))
 puts page
 
-a = page.xpath('/mettre_ici_le_XPath')
-puts a
+a = page.xpath('//*[@id="__next"]/div[1]/div[2]/div/div[1]/div/div[2]/div[3]/div/table/tbody/tr[1]/td[2]/div/a[2]')
 
-
-
-binding.pry 
